@@ -1,161 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Metadatos importantes para renderizar nuestra página -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Metadatos importantes para renderizar nuestra página -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzería: Awa Sonora</title>
-</head>
-<body style="background-color: aliceblue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+  </head>
+  <body
+    style="
+      background-color: aliceblue;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    "
+  >
+    <header>
+      <!-- Esta es una etiqueta semantica de cabecera --->
 
-    <header><!-- Esta es una etiqueta semantica de cabecera --->
-        
+      <!-- Esta es la sección sobre la pizzería -->
+      <div style="text-align: center">
+        <h1 style="color: chocolate">Pizzería: Awa Sonora</h1>
+        <p style="font-size: 26px">Las mejores pizzas de todo Sonora.</p>
+      </div>
 
-         <!-- Esta es la sección sobre la pizzería -->
-        <div style="text-align: center;">
-            <h1 style="color: chocolate;">Pizzería: Awa Sonora</h1>
-            <p style="font-size: 26px;">Las mejores pizzas de todo Sonora.</p>
-        </div>
+      <nav>
+        <!-- Barra de navegación -->
+        <ul>
+          <!-- ul = Lista desordenada/unordered list, se usa para menus, lifehack: puedo poner li*num + tab  -->
+          <!-- ol es ordered list, es cuando queremos poner pasos -->
+          <!-- Enlace interno -->
 
-        <nav><!-- Barra de navegación -->
-            <ul><!-- ul = Lista desordenada/unordered list, se usa para menus, lifehack: puedo poner li*num + tab  --> <!-- ol es ordered list, es cuando queremos poner pasos -->
-                <!-- Enlace interno -->
-                
-                <li> <a href="#promo">Promociones</a> </li>
-                <li> <a href="#menu">Menu</a> </li>
-                <li> <a href="#pq">Sabes por qué es buena la pizza?</a> </li>
-                <li> <a href="#pedidos">Programe un pedido</a> </li>
-                <li> <a href="#redes">Síguenos en nuestras redes sociales!</a> </li>
-            </ul>
-        </nav> 
-
+          <li><a href="#promo">Promociones</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#pq">Sabes por qué es buena la pizza?</a></li>
+          <li><a href="#pedidos">Programe un pedido</a></li>
+          <li><a href="#redes">Síguenos en nuestras redes sociales!</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Información principal de mi página -->
-     <main style="text-align: center;">
-       
-        <!-- Esta es la sección de promociones -->
-        <section id="promo">
-            <h2>Promociones</h2>
-            <ul>
-                <li><strong>2x1</strong> en alitas los Martes y Jueves</li>
-                <li><strong>Pizza 1 ingrediente:</strong> a tan solo <em>$140.00 pesos!</em></li>
-                <li>Obtenga un descuento si viene con su tarjetita de afiliado n-n</li>
-
-            </ul>
-        </section>
-
-        <!-- Esta es la sección de menú -->
-
-        <section id="menu">
-            <h2>Menu</h2>
-            <!-- No existe un contenedor para una tarjeta, asi que usaré un div -->
-             <!-- Tarjeta de postre -->
-             <article>
-                <img src="https://mojo.generalmills.com/api/public/content/BWONvQzSPk-yufpVy0PNkg_gmi_hi_res_jpeg.jpeg?v=1f8c7307&t=16e3ce250f244648bef28c5949fb99ff" alt="Imagen de un pizza de corazón" width="300" >
-                <h3>Pizza de corazón uwu</h3>
-                <p><strong style="color: red;">$99.00</strong></p>
-                <button style="border-radius: 12px; background-color: blue;color:white;">Agregar</button>
-             </article>
-
-             <article>
-                <img src="https://mobilestatic.littlecaesars.com/mexweborderingimages/083a6b87-6e7b-444e-b30a-f4d8e1894e7e.jpg" alt="Imagen de una pizza de un solo ingrediente" width="300">
-                <h3>Pizza de un solo ingrediente</h3>
-                <p><strong>$80.00</strong></p>
-                <button style="border-radius: 12px; background-color: blue;color:white;">Agregar</button>
-             </article>
-
-             <article>
-                <img src="https://mobilestatic.littlecaesars.com/mexweborderingimages/c5fed55d-013e-4f3d-83c1-0cbef03a2d71.png" alt="Imagen de una pizza mitad mitad" width="300" >
-                <h3>Pizza mitad-mitad!</h3>
-                <p><strong>$120.00</strong></p>
-                <button style="border-radius: 12px; background-color: blue;color:white;">Agregar</button>
-             </article>
-
-        </section>
-
-
-        <!-- Esta es la sección de pq es buena una pizza -->
-        <section id="pq">
-            <h2>¿Por qué es buena una pizza?</h2>            
-            <h3>Te queremos convencer de que vengas a nuestro local, por ello, es que te vamos a dar 3 razones por las cuales debes comprar una pizza, Y POR QUÉ CON NOSOTROS 😼</h3>
-            <ol>
-                <li>Sabe muy rica y te podemos dar muchisimas combinaciones</li>
-                <li>Puedes compartirlo con tus amigos o familia, incluso tú solito!</li>
-                <li>Te la damos al instante, no te lo pierdas!!! óuó</li>
-            </ol>
-
-        </section>
-
-        
-
-        <section id="pedidos">
-
-
-            <h3>Programe por adelantado un pedido!</h3>
-            <!-- Formulario -->
-             <form action="">
-                <label for="">Nombre completo: </label>
-                <input type="text" placeholder="Aquí va su nombre completo">
-
-                <label for="">Celular: </label>
-                <input type="tel" placeholder="Aquí va su celular">
-
-                <label for="">Correo electrónico: </label>
-                <input type="email" placeholder="Aquí va su email">
-
-                <label for="">Seleccione el tamaño de la pizza</label>
-                
-                <!-- Div para agrupar las opciones -->
-                <div>
-                    <label for=""><input type="radio">Pequeña</label>
-                    <label for=""><input type="radio">Mediana</label>
-                    <label for=""><input type="radio">Grande</label>
-                    <label for=""><input type="radio">Familiar </label>
-
-                </div>
-
-                <label for="">Extras:</label>
-                
-                <div>
-                    <label for=""><input type="checkbox">Pepperoni</label>
-                    <label for=""><input type="checkbox">Queso</label>
-                    <label for=""><input type="checkbox">Orillas de queso</label>
-                    <label for=""><input type="checkbox">Más alitas</label>
-                </div>
-
-                <label for="">Seleccione la fecha en que quiere el pedido</label>
-                <input type="date" name="" id="">
-                <br>
-
-                <label for="">Quiere que hagamos su pizza personalizada? Añada una imagen de referencia</label>
-                <input type="file" name="" id="">
-                <br>
-                <button type="submit">Enviar pedido</button>
-
-             </form>
-
-        </section>
-
-
-
-
-     </main>
-
-     <!-- Footer, pie de página, va después de main -->
-     <footer id="redes" style="text-align: center;">
-        <h2>Visítanos en nuestras redes sociales! 😺</h2>
+    <main style="text-align: center">
+      <!-- Esta es la sección de promociones -->
+      <section id="promo">
+        <h2>Promociones</h2>
         <ul>
-            <li><a href="https://www.facebook.com/littlecaesarsMEX">Facebook</a></li>
-            <li><a href="https://www.instagram.com/littlecaesarsmx">Instagram</a></li>
-            <li><a href="https://www.tiktok.com/@littlecaesarsmexico/video/7481845514766454021?lang=es" target="_blank">Tiktok</a></li>
-            <li><a href="https://www.youtube.com/watch?v=tOGZ_Yjlpew" target="_blank" >Youtube</a></li>
+          <li><strong>2x1</strong> en alitas los Martes y Jueves</li>
+          <li>
+            <strong>Pizza 1 ingrediente:</strong> a tan solo
+            <em>$140.00 pesos!</em>
+          </li>
+          <li>
+            Obtenga un descuento si viene con su tarjetita de afiliado n-n
+          </li>
         </ul>
-        <!-- El atributo target="_blank" abre los enlaces en una nueva página-->
+      </section>
 
-        <p>2025 Pizzería: Awa Sonora - Todos los derechos reservados </p>
+      <!-- Esta es la sección de menú -->
 
-     </footer>
+      <section id="menu">
+        <h2>Menu</h2>
+        <!-- Tarjeta de postre -->
+        <article>
+          <img
+            src="https://mojo.generalmills.com/api/public/content/BWONvQzSPk-yufpVy0PNkg_gmi_hi_res_jpeg.jpeg?v=1f8c7307&t=16e3ce250f244648bef28c5949fb99ff"
+            alt="Imagen de un pizza de corazón"
+            width="300"
+          />
+          <h3>Pizza de corazón uwu</h3>
+          <p><strong style="color: red">$99.00</strong></p>
+          <button
+            style="border-radius: 12px; background-color: blue; color: white"
+          >
+            Agregar
+          </button>
+        </article>
 
-</body>
+        <article>
+          <img
+            src="https://mobilestatic.littlecaesars.com/mexweborderingimages/083a6b87-6e7b-444e-b30a-f4d8e1894e7e.jpg"
+            alt="Imagen de una pizza de un solo ingrediente"
+            width="300"
+          />
+          <h3>Pizza de un solo ingrediente</h3>
+          <p><strong>$80.00</strong></p>
+          <button
+            style="border-radius: 12px; background-color: blue; color: white"
+          >
+            Agregar
+          </button>
+        </article>
+
+        <article>
+          <img
+            src="https://mobilestatic.littlecaesars.com/mexweborderingimages/c5fed55d-013e-4f3d-83c1-0cbef03a2d71.png"
+            alt="Imagen de una pizza mitad mitad"
+            width="300"
+          />
+          <h3>Pizza mitad-mitad!</h3>
+          <p><strong>$120.00</strong></p>
+          <button
+            style="border-radius: 12px; background-color: blue; color: white"
+          >
+            Agregar
+          </button>
+        </article>
+      </section>
+
+      <!-- Esta es la sección de pq es buena una pizza -->
+      <section id="pq">
+        <h2>¿Por qué es buena una pizza?</h2>
+        <h3>
+          Te queremos convencer de que vengas a nuestro local, por ello, es que
+          te vamos a dar 3 razones por las cuales debes comprar una pizza, Y POR
+          QUÉ CON NOSOTROS 😼
+        </h3>
+        <ol>
+          <li>Sabe muy rica y te podemos dar muchisimas combinaciones</li>
+          <li>
+            Puedes compartirlo con tus amigos o familia, incluso tú solito!
+          </li>
+          <li>Te la damos al instante, no te lo pierdas!!! óuó</li>
+        </ol>
+      </section>
+
+      <section id="pedidos">
+        <h3>Programe por adelantado un pedido!</h3>
+        <!-- Formulario -->
+        <form action="">
+          <label for="">Nombre completo: </label>
+          <input type="text" placeholder="Aquí va su nombre completo" />
+
+          <label for="">Celular: </label>
+          <input type="tel" placeholder="Aquí va su celular" />
+
+          <label for="">Correo electrónico: </label>
+          <input type="email" placeholder="Aquí va su email" />
+
+          <label for="">Seleccione el tamaño de la pizza</label>
+
+          <!-- Div para agrupar las opciones -->
+          <div>
+            <label for=""><input type="radio" />Pequeña</label>
+            <label for=""><input type="radio" />Mediana</label>
+            <label for=""><input type="radio" />Grande</label>
+            <label for=""><input type="radio" />Familiar </label>
+          </div>
+
+          <label for="">Extras:</label>
+
+          <div>
+            <label for=""><input type="checkbox" />Pepperoni</label>
+            <label for=""><input type="checkbox" />Queso</label>
+            <label for=""><input type="checkbox" />Orillas de queso</label>
+            <label for=""><input type="checkbox" />Más alitas</label>
+          </div>
+
+          <label for="">Seleccione la fecha en que quiere el pedido</label>
+          <input type="date" name="" id="" />
+          <br />
+
+          <label for=""
+            >Quiere que hagamos su pizza personalizada? Añada una imagen de
+            referencia</label
+          >
+          <input type="file" name="" id="" />
+          <br />
+          <button type="submit">Enviar pedido</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer, pie de página, va después de main -->
+    <footer id="redes" style="text-align: center">
+      <h2>Visítanos en nuestras redes sociales! 😺</h2>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/littlecaesarsMEX">Facebook</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/littlecaesarsmx">Instagram</a>
+        </li>
+        <li>
+          <a
+            href="https://www.tiktok.com/@littlecaesarsmexico/video/7481845514766454021?lang=es"
+            target="_blank"
+            >Tiktok</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=tOGZ_Yjlpew" target="_blank"
+            >Youtube</a
+          >
+        </li>
+      </ul>
+      <!-- El atributo target="_blank" abre los enlaces en una nueva página-->
+
+      <p>2025 Pizzería: Awa Sonora - Todos los derechos reservados</p>
+    </footer>
+  </body>
 </html>
